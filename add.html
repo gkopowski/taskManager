@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Task Manager - Add Task</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Daily Planner</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Task Manager</a></li>
+            <li><a href="add.html">Add Task</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+		<h2 class="page-header">Add Tasks</h2>
+	
+		<form id="add-task-form" action="index.html">
+		  <div class="form-group">
+			<label>Task</label>
+			<input type="text" class="form-control" id="task" placeholder="Enter Task">
+		  </div>
+		  <div class="form-group">
+			<label>Priority</label>
+			<select class="form-control" id="priority">
+				<option value="low">Low</option>
+				<option value="normal" selected>Normal</option>
+				<option value="high">High</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+			<label>Date</label>
+			<input type="date" id="date" class="form-control">
+		  </div>
+		  <div class="form-group">
+			<label>Time</label>
+			<input type="time" id="time" class="form-control">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
